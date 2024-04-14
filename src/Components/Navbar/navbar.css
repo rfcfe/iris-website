@@ -7,11 +7,12 @@ nav {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     z-index: 9999;
 }
+
 .nav_container {
     display: flex;
     align-items: center;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1550px;
 }
 
 .nav_list {
@@ -34,15 +35,20 @@ nav a {
     text-transform: capitalize;
     margin-right: 30px;
     color: #000000;
+    font-size: 1rem;
+    text-decoration: none;
 }
 
 .header-container-menu-item {
     display: inline-block;
     padding: 0 5px;
+
 }
 
 .header-container-menu-item:hover a {
-    color: #fec544;
+    font-size: 1.2rem;
+    color: #777;
+    transition: font-size 0.3s, color 0.3s;
 }
 
 .header-toggle {

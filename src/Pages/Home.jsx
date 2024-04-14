@@ -4,11 +4,10 @@ import Swiper from "swiper";
 
 function Home() {
   return (
-    <div>
-      <div>
-        <Swiper_one />
-      </div>
-    </div>
+    <>
+      <Swiper_one />
+      <Swiper_one />
+    </>
   );
 }
 
