@@ -16,7 +16,7 @@ function Navbar() {
   return (
     <nav className="nav">
       <div className="nav_container">
-        <li>
+        <li className="logo">
           <Link to="/" onClick={handleClick}>
             {<img src="../images/logo.svg" alt="logo" width="50px" />}
           </Link>

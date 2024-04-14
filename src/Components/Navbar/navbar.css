@@ -6,6 +6,7 @@ nav {
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     z-index: 9999;
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .nav_container {
@@ -55,10 +56,19 @@ nav a {
     display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
     .nav_list {
         margin-left: auto;
         flex-grow: 0;
+    }
+
+    nav {
+        position: absolute;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
     }
 
     .header-container-menu {
@@ -70,18 +80,46 @@ nav a {
         position: absolute;
         left: -100%;
         opacity: 0;
-        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        transition: opacity 0.6s ease-in, transform 0.6s ease-out;
+
 
     }
 
 
     .active {
-        background-color: rgba(255, 255, 255, 0.8);
-        left: 0px;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 1);
+        top: 100%;
         opacity: 1;
-        align-items: end;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
         transition: all 0.5s ease-in;
         transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+
+    }
+
+    .header-container-menu li {
+        margin-bottom: 20px;
+        /* Adjust spacing between options */
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-container-menu-item a {
+        font-size: 1;
+        /* Adjust font size */
+        color: #000;
+        /* Adjust font color */
+    }
+
+    .header-container-menu-item:hover a {
+        font-size: 1rem;
+        color: #777;
     }
 
     .header-toggle {
