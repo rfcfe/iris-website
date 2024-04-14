@@ -1,0 +1,12 @@
+.swiper {
+    position: relative;
+    max-width: 1200px;
+    box-sizing: border-box;
+    width: 100vh;
+    height: 90vh;
+}
+
+.slide-item {
+    width: 100vh;
+    height: 90vh;
+}

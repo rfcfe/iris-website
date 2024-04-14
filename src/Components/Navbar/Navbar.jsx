@@ -5,10 +5,6 @@ import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
-  window.addEventListener("scroll", function () {
-    const header = this.document.querySelector(".header");
-    header.classList.toggle("active", this.window.scrollY > 100);
-  });
   const [isToggleIcon, setIsToggleIcon] = useState(false);
   const handleClick = () => {
     window.scrollTo(0, 0);
