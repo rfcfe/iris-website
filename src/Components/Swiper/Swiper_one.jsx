@@ -1,6 +1,7 @@
 import { register } from "swiper/element/bundle";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Navigation, A11y } from "swiper/modules";
+import { SWIPER_DATA } from "../../utils/data";
 import "./Swiper_one.css";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -12,33 +13,6 @@ import Overlay from "./Overlay";
 register();
 
 function Swiper_one() {
-  const data = [
-    {
-      id: "1",
-      image: "../images/casa1.png",
-      title: "Teste titlo",
-      text: "aaaa",
-      button1Label:"carrega1",
-      button2Label:"carrega2",
-    },
-    {
-      id: "2",
-      image: "../images/Cozinha1.jpg",
-      title: "Teste titlo",
-      text: "aaaa",
-      button1Label:"carrega1",
-      button2Label:"carrega2",
-    },
-    {
-      id: "3",
-      image: "../images/Casa2.jpg",
-      title: "Teste titlo",
-      text: "aaaa",
-      button1Label:"carrega1",
-      button2Label:"carrega2",
-    },
-  ];
-
   return (
     <Swiper
       modules={[Navigation, A11y]}
@@ -51,7 +25,7 @@ function Swiper_one() {
         disableOnInteraction: false,
       }}
     >
-      {data.map((item) => (
+      {SWIPER_DATA.map((item) => (
         <SwiperSlide key={item.id}>
           <img src={item.image} alt="slider" className="slide-item" />
           <Overlay

@@ -29,8 +29,3 @@ a {
 .link {
   color: #ffffff;
 }
-@media only screen and (max-width: 1000px) {
-body{
-  margin-top: 80px;
-}
-}
