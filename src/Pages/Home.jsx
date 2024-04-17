@@ -6,7 +6,7 @@ function Home() {
   return (
     <>
       <Swiper_one />
-      <Swiper_one />
+      {/* <Swiper_one /> */}
     </>
   );
 }

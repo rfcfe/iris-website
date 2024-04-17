@@ -2,7 +2,7 @@
     position: relative;
     max-width: 1550px;
     width: 100%;
-    height: 90vh;
+    height: 87vh;
     margin: 0 auto;
 }
 
@@ -46,38 +46,61 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 5rem;
-    padding-right: 9rem;
-    padding-left: 9rem;
-    border-radius: 10px;
-    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 850px;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .overlay h1 {
-    font-size: 24px;
+    font-size: 4.5rem;
+    color: #1a1a1a;
     margin-bottom: 10px;
+    margin-right: 10rem;
+    font-weight: 1;
+    text-transform: uppercase;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
 
 .overlay p {
-    font-size: 16px;
+    font-size: 1.5rem;
     margin-bottom: 20px;
+    color: #1a1a1a;
+    font-weight: 1;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
 
 .overlay .buttons {
     display: flex;
     justify-content: start;
+    margin: 0 0 2.5rem 2.5rem;
+
+}
+
+.overlay-title {
+    margin-left: 3rem;
+    margin-top: 2rem;
+    margin-right: 3rem;
+}
+
+.overlay-text {
+    margin-top: 2rem;
+    margin-left: 3rem;
 }
 
 .overlay .buttons .button1 {
     margin: 0 0.3rem;
     padding: 1rem 1.3rem;
+    width: 12.5rem;
     border: none;
-    border: 1.5px solid #000000;
+    border: 2px solid #000000;
     background-color: #000000;
     color: #fff;
-    font-size: 16px;
+    font-size: 1.06rem;
     cursor: pointer;
+    font-family: "Segoe UI", Arial, sans-serif;
 
 }
 
@@ -87,11 +110,31 @@
 }
 
 .overlay .buttons .button2 {
-    margin: 0 0.3rem;
+    margin: 0 1rem;
     padding: 1rem 2rem;
+    width: 10rem;
+    height: 3.8rem;
     border: none;
-    border: 1.5px solid #000000;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #000000;
     color: #000000;
-    font-size: 16px;
+    font-size: 1.06rem;
     cursor: pointer;
+    font-family: "Segoe UI", Arial, sans-serif;
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .overlay {
+        display: none;
+    }
+
+    .swiper {
+        position: relative;
+        max-width: 750px;
+        width: 100%;
+        height: 90vh;
+        margin: 0 auto;
+    }
+
 }
