@@ -24,6 +24,7 @@ function Swiper_one() {
         delay: 7000,
         disableOnInteraction: false,
       }}
+      simulateTouch={false}
     >
       {SWIPER_DATA.map((item) => (
         <SwiperSlide key={item.id}>
