@@ -74,3 +74,13 @@ export const SWIPER_DATA = [
     button2Label: "Ver Projetos",
   },
 ];
+
+export const SECTION1_DATA = {
+  text1:
+    "Fundada há mais de duas décadas na próspera região de Cascais/Lisboa, a nossa empresa de construção civil tem sido uma referência confiável e respeitada no setor. Com um histórico de excelência e dedicação, oferecemos serviços de construção de alta qualidade, desde projetos residenciais a comerciais, sempre com um compromisso inabalável com a satisfação do cliente. A nossa experiência e conhecimento local garantem resultados excepcionais em cada empreendimento que realizamos.",
+};
+
+export const SECTION2_DATA = {
+  text1:
+    "Fundada há mais de duas décadas na próspera região de Cascais/Lisboa, a nossa empresa de construção civil tem sido uma referência confiável e respeitada no setor. Com um histórico de excelência e dedicação, oferecemos serviços de construção de alta qualidade, desde projetos residenciais a comerciais, sempre com um compromisso inabalável com a satisfação do cliente. A nossa experiência e conhecimento local garantem resultados excepcionais em cada empreendimento que realizamos.",
+};
