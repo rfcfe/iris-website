@@ -10,7 +10,7 @@ function Section1() {
     <section className="section1-layout">
       <h1 className="section1-title">Iris Amarelo LDA</h1>
 
-      <h1 className="section1-title2">Empresa de Construção Civil</h1>
+      <h1 className="section1-title2">Construção Civil</h1>
       <div className="title-line"></div>
       <div className="section1-container">
         <div className="section1-left">{SECTION1_DATA.text1}</div>

@@ -1,5 +1,5 @@
 .section1-layout {
-    max-width: 60vw;
+    max-width: 70vw;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -10,11 +10,11 @@
 }
 
 .section2 {
-    background-color: aliceblue;
+    background-color: rgb(216, 233, 184);
 }
 
 .section2-layout {
-    max-width: 60vw;
+    max-width: 70vw;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -36,13 +36,25 @@
     text-align: center;
 }
 
+.section2-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 4.5rem;
+    color: #1a1a1a;
+    font-weight: 1;
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-align: center;
+}
+
 .title-line {
     margin-top: 1rem;
     margin-bottom: 3rem;
     width: 50%;
-    display: flex;
     border-bottom: 2px solid #000;
-    justify-content: center;
+    margin-left: auto; /* Pushes the line to the right */
+    margin-right: auto; /* Pushes the line to the left */
 }
 
 .section1-title2 {
@@ -74,16 +86,13 @@
 
 .section1-left {
     flex: 1;
-    margin-top: 1rem;
-    font-family: "Segoe UI", Arial, sans-serif;
-    line-height: 2;
 }
 
 .section2-left {
     flex: 1;
     margin-top: 1rem;
     font-family: "Segoe UI", Arial, sans-serif;
-    line-height: 2;
+
 }
 
 .section1-left text {
@@ -95,14 +104,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 2;
 
 }
 
 .section2-right {
     flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 1rem;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
 
 .section2-text {
@@ -130,7 +139,27 @@
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
-.section1-button:hover {
+.section2-button-container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.section2-button {
+    width: 15rem;
+    height: 3.8rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #000000;
+    background-color: #000000;
+    color: #fff;
+    font-size: 1.06rem;
+    cursor: pointer;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.section1-button:hover,
+.section2-button:hover {
     background-color: #ffffff;
     color: #000000;
 }
@@ -142,6 +171,18 @@
 
     .section1-button {
         margin-top: 2rem;
+    }
+
+    .section2-img {
+        display: none;
+    }
+
+    .section2-container {
+        flex-direction: column;
+    }
+
+    .section2-text {
+        margin-left: 0rem;
     }
 
 }

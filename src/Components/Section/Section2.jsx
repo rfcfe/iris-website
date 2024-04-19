@@ -14,7 +14,12 @@ function Section2() {
             />
           </div>
           <div className="section2-right">
+            <h1 className="section2-title">Iris Amarelo LDA</h1>
+            <div className="title-line"></div>
             <div className="section2-text">{SECTION2_DATA.text1}</div>
+            <div className="section2-button-container">
+              <button className="section2-button">Conheça-nos</button>
+            </div>
           </div>
         </div>
       </div>
