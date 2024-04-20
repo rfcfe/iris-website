@@ -1,0 +1,59 @@
+.card {
+    position: relative;
+    overflow: hidden;
+    width: 20rem;
+    height: 50vh
+}
+
+.card-image {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    transition: filter 1s, transform 1s ease-in-out;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover .card-image {
+    filter: brightness(70%);
+    transform: scale(1.05);
+}
+
+.card:hover .card-overlay {
+    opacity: 1;
+}
+
+.chat-description {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+.collection-layout {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.collection-container {
+    max-width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.collection-item {
+    margin: 0 10%;
+}
