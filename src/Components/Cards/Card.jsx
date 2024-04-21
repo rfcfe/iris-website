@@ -1,14 +1,18 @@
 import React from "react";
-import "./cards.css"; // Import CSS file for styling
+import "./cards.css";
 
-const Card = ({}) => {
+const Card = ({ image, text }) => {
   return (
-    <div className="card">
-      <img src="../images/Casa2.jpg" alt="Card" className="card-image" />
-      <div className="card-overlay">
-        <p className="chat-description">ahahhahahah</p>
-      </div>
-    </div>
+    <>
+      {image && text && (
+        <div className="card">
+          <img src={image} alt="Card" className="card-image" />
+          <div className="card-overlay">
+            <p className="chat-description">{text}</p>
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 

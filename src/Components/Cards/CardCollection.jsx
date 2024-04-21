@@ -1,21 +1,22 @@
 import React from "react";
 import Card from "./Card";
 
-function CardCollection() {
+function CardCollection({ items }) {
   return (
-    <section className="collection-layout">
-      <div className="collection-container">
-        <div className="collection-item">
-          <Card />
+    <>
+      {items && (
+        <div className="collection-layout">
+          <div className="collection-container">
+            {items.map((item) => (
+              <div className="collection-item" key={item.id}>
+                {console.log(item.image)}
+                <Card image={item.image} text={item.text} />
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="collection-item">
-          <Card />
-        </div>
-        <div className="collection-item">
-          <Card />
-        </div>
-      </div>
-    </section>
+      )}
+    </>
   );
 }
 

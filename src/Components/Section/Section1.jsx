@@ -9,7 +9,6 @@ function Section1() {
   return (
     <section className="section1-layout">
       <h1 className="section1-title">Iris Amarelo LDA</h1>
-
       <h1 className="section1-title2">Construção Civil</h1>
       <div className="title-line"></div>
       <div className="section1-container">

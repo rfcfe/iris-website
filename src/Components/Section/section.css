@@ -14,6 +14,10 @@
     padding-bottom: 3%;
 }
 
+.section3 {
+    margin-top: 3rem;
+}
+
 .section2-layout {
     max-width: 70vw;
     width: 100%;
@@ -37,6 +41,19 @@
     text-align: center;
 }
 
+.section3-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 4.5rem;
+    color: #1a1a1a;
+    font-weight: 1;
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-align: center;
+}
+
+
 .section2-title {
     display: flex;
     justify-content: center;
@@ -58,6 +75,15 @@
     margin-right: auto;
 }
 
+.title-line3 {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    width: 15%;
+    border-bottom: 2px solid #000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .section1-title2 {
     display: flex;
     justify-content: center;
@@ -68,6 +94,11 @@
     text-align: center;
 }
 
+.section3-cardcollection {
+    margin-top: 5%;
+
+
+}
 
 .section1-container {
     display: flex;
