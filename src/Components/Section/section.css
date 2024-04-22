@@ -6,12 +6,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     margin-top: 5%;
 }
 
 .section2 {
     background-color: rgb(216, 233, 184);
     padding-bottom: 3%;
+    overflow: hidden;
 }
 
 .section3 {
@@ -169,6 +171,55 @@
     font-size: 1.06rem;
     cursor: pointer;
     font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.section1-left,
+.section1-title,
+.section1-title2,
+.section1-button {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s, transform 1.5s;
+}
+
+.section1-left.active,
+.section1-title.active,
+.section1-title2.active,
+.section1-button.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.section2-text,
+.section2-title,
+.title-line,
+.section2-button {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s, transform 1.5s;
+}
+
+.section2-text.active,
+.section2-title.active,
+.title-line.active,
+.section2-button.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.section3-title,
+.title-line3,
+.section3-cardcollection {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s, transform 1.5s;
+}
+
+.section3-title.active,
+.title-line3.active,
+.section3-cardcollection.active {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .section2-button-container {

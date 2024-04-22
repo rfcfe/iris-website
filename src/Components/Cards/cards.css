@@ -4,6 +4,15 @@
     width: 20rem;
     height: 50vh
 }
+.card{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s, transform 1.5s;
+}
+.card.active{
+    opacity:1;
+    transform: translateX(0);
+}
 
 .card-image {
     width: 100%;
