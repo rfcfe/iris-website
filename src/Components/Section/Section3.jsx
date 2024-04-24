@@ -5,6 +5,8 @@ import { SECTION3_DATA } from "../../utils/data";
 function Section3() {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
+  const isSmallScreen = window.innerWidth <= 1000;
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -12,6 +14,7 @@ function Section3() {
           setIsVisible(true);
         }
       },
+
       { threshold: 0.1 }
     );
 
@@ -27,14 +30,25 @@ function Section3() {
   }, []);
   return (
     <section className="section3" ref={sectionRef}>
-      <h1 className={`section3-title ${isVisible ? "active" : ""}`}>
+      <h1
+        className={`section3-title ${
+          isSmallScreen ? "active" : isVisible ? "active" : ""
+        }`}
+      >
         Serviços
       </h1>
-      <div className={`title-line3 ${isVisible ? "active" : ""}`}></div>
       <div
-        className={`section3-cardcollection ${isVisible ? "active" : ""}`}
+        className={`title-line3 ${
+          isSmallScreen ? "active" : isVisible ? "active" : ""
+        }`}
+      ></div>
+      <div
+        className={`section3-cardcollection ${
+          isSmallScreen ? "active" : isVisible ? "active" : ""
+        }`}
       ></div>
       <CardCollection items={SECTION3_DATA} />
+      {console.log(isVisible)}
     </section>
   );
 }
