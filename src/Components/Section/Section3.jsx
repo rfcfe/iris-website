@@ -8,9 +8,11 @@ function Section3() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIsVisible(entry.isIntersecting);
+        if (!isVisible && entry.isIntersecting) {
+          setIsVisible(true);
+        }
       },
-      { threshold: 0.5 }
+      { threshold: 0.1 }
     );
 
     if (sectionRef.current) {

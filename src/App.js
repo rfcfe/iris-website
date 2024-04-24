@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Example from "./Components/Example";
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Pages/Home";
+import Footer from "./Components/Footer/Footer";
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/blogFilter/:category" element={<Example />} />
           <Route exact path="/contact" element={<Example />} />
         </Routes>
+        {/* <Footer /> */}
       </Router>
     </>
   );

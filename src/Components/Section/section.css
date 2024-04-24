@@ -11,13 +11,15 @@
 }
 
 .section2 {
+    margin-top: 5%;
     background-color: rgb(216, 233, 184);
     padding-bottom: 3%;
-    overflow: hidden;
+    
 }
 
 .section3 {
     margin-top: 3rem;
+    overflow: hidden;
 }
 
 .section2-layout {
@@ -146,6 +148,7 @@
     flex: 1;
     margin-top: 1rem;
     font-family: "Segoe UI", Arial, sans-serif;
+    overflow: hidden;
 }
 
 .section2-text {
