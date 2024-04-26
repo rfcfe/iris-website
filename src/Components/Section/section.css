@@ -185,7 +185,7 @@
 .section1-title2,
 .section1-button {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(100%);
     transition: opacity 1s, transform 1.5s;
 }
 

@@ -105,16 +105,13 @@ nav a {
 
     .header-container-menu li {
         margin-bottom: 20px;
-        /* Adjust spacing between options */
         width: 100%;
         text-align: center;
     }
 
     .header-container-menu-item a {
         font-size: 1;
-        /* Adjust font size */
         color: #000;
-        /* Adjust font color */
     }
 
     .header-container-menu-item:hover a {

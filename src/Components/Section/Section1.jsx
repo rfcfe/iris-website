@@ -57,7 +57,7 @@ function Section1() {
         }`}
       >
         <div
-          className={`section1-left${
+          className={`section1-left ${
             isSmallScreen ? "active" : isVisible ? "active" : ""
           }`}
         >
