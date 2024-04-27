@@ -33,6 +33,7 @@
 .section3 {
     margin-top: 3rem;
     position: relative;
+    overflow: hidden;
 }
 
 
