@@ -1,7 +1,7 @@
 // NAVIGATION
 export const nav = [
   { url: "/", id: "inicio", text: "Inicio" },
-  { url: "/servicos", id: "servicos", text: "Serviços" },
+  { url: "/sobre", id: "sobre", text: "Empresa" },
   { url: "/albuns", id: "albuns", text: "Albuns" },
   { url: "/contacto", id: "contacto ", text: "Contacto" },
 ];

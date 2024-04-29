@@ -14,7 +14,12 @@ function Footer() {
         <div className="footer-content">
           <div className="footer-logo">
             <a href="/">
-              <img src="../images/logo.svg" alt="logo" width={74} height={29} />
+              <img
+                src="../images/logo.svg"
+                alt="Iris Amarelo Logo"
+                width={74}
+                height={29}
+              />
             </a>
           </div>
 
@@ -26,7 +31,7 @@ function Footer() {
                   {columns.links.map((link, linkIndex) => (
                     <li key={linkIndex}>
                       <a href={link.site} className="footer-link">
-                        {link.text}
+                        <span className="footer-value">{link.text}</span>
                       </a>
                     </li>
                   ))}
@@ -52,7 +57,7 @@ function Footer() {
 
             <div className="footer-column">
               <h4 className="footer-column-title">{SOCIALS.title}</h4>
-              <ul className="footer-column-links footer-social-links">
+              <ul className="footer-column-links">
                 {SOCIALS.links.map((link, index) => (
                   <li key={index}>
                     <a href={link.site}>
@@ -60,6 +65,7 @@ function Footer() {
                         src={link.image}
                         alt="logo"
                         className="footer-social-icon"
+                        
                       />
                     </a>
                   </li>

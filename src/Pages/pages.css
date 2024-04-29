@@ -1,0 +1,90 @@
+.sobre-layout {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.sobre-title-container {
+    background-color: rgb(216, 233, 184);
+    padding: 3rem;
+}
+
+.sobre-title {
+    font-size: 4.5rem;
+    font-weight: 1;
+    text-align: center;
+    color: #1a1a1a;
+    font-size: clamp(2rem, 6vw, 4.5rem);
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.sobre-container1 {
+    max-width: 70vw;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5%;
+}
+
+.sobre-left {
+    display: flex;
+    justify-content: center;
+
+}
+
+.sobre-right {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-left: 4rem;
+
+}
+
+.sobre-img {
+    width: 90%;
+    height: 1000px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.sobre-subtitle {
+    font-size: clamp(1rem, 6vw, 2.5rem);
+    color: #1a1a1a;
+    font-weight: 1;
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.sobre-subtitle2 {
+    font-size: clamp(1rem, 6vw, 2rem);
+    color: #1a1a1a;
+    font-weight: 1;
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.sobre-text {
+    font-size: 1rem;
+    color: #1a1a1a;
+    font-weight: 50;
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin-bottom: 2rem;
+}
+
+.sobre-text-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5%;
+}
+
+.sobre-text-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 4rem;
+    flex-direction: column;
+}

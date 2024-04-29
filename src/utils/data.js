@@ -192,13 +192,8 @@ export const SOCIALS = {
   title: "Redes Sociais",
   links: [
     {
-      image: "/facebook.svg",
+      image: "../images/FaceBook_Logo.svg",
       site: "https://www.facebook.com/irisamarelo",
-    },
-
-    {
-      image: "/instagram.svg",
-      site: "",
     },
   ],
 };
