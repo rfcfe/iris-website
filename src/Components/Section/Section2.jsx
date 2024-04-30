@@ -1,31 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./section.css";
 import { SECTION2_DATA } from "../../utils/data";
+import useIntersectionObserver from "../../utils/useIntersectionObserver";
 
 function Section2() {
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef(null);
+  const [isVisible, sectionRef] = useIntersectionObserver();
   const isSmallScreen = window.innerWidth <= 1000;
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!isVisible && entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.5 }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, []);
   return (
     <section className="section2" ref={sectionRef}>
       <div className="section2-layout">

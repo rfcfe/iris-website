@@ -43,7 +43,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-size: clamp(2rem, 6vw, 4.5rem); 
+    font-size: clamp(2rem, 6vw, 4.5rem);
     color: #1a1a1a;
     font-weight: 1;
     font-family: "Segoe UI", Arial, sans-serif;
@@ -55,7 +55,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-size: clamp(2rem, 6vw, 4.5rem); 
+    font-size: clamp(2rem, 6vw, 4.5rem);
     color: #1a1a1a;
     font-weight: 1;
     font-family: "Segoe UI", Arial, sans-serif;
@@ -68,7 +68,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-size: clamp(2rem, 6vw, 4.5rem); 
+    font-size: clamp(2rem, 6vw, 4.5rem);
     color: #1a1a1a;
     font-weight: 1;
     font-family: "Segoe UI", Arial, sans-serif;
@@ -96,7 +96,7 @@
 .section1-title2 {
     display: flex;
     justify-content: center;
-    font-size: clamp(2rem, 6vw, 4.5rem); 
+    font-size: clamp(2rem, 6vw, 4.5rem);
     color: #1a1a1a;
     font-weight: 1;
     font-family: "Segoe UI", Arial, sans-serif;
@@ -169,6 +169,8 @@
 }
 
 .section1-button {
+    display: inline-block;
+    position: relative;
     width: 15rem;
     height: 3.8rem;
     text-align: center;
@@ -179,7 +181,50 @@
     font-size: 1.06rem;
     cursor: pointer;
     font-family: "Segoe UI", Arial, sans-serif;
+    animation: bn13bouncy 5s infinite linear;
 }
+.section2-button {
+    display: inline-block;
+    position: relative;
+    width: 15rem;
+    height: 3.8rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #000000;
+    background-color: #000000;
+    color: #fff;
+    font-size: 1.06rem;
+    cursor: pointer;
+    font-family: "Segoe UI", Arial, sans-serif;
+    animation: bn13bouncy 5s infinite linear;
+}
+
+.section1-button:after, .section2-button::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+
+.section1-button:hover:after, .section2-button:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+
+
+
+.section1-button:hover,
+.section2-button:hover {
+    color: #000000;
+}
+
 
 .section1-left,
 .section1-title,
@@ -236,24 +281,7 @@
     justify-content: center;
 }
 
-.section2-button {
-    width: 15rem;
-    height: 3.8rem;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0);
-    border: 2px solid #000000;
-    background-color: #000000;
-    color: #fff;
-    font-size: 1.06rem;
-    cursor: pointer;
-    font-family: "Segoe UI", Arial, sans-serif;
-}
 
-.section1-button:hover,
-.section2-button:hover {
-    background-color: #ffffff;
-    color: #000000;
-}
 
 @media only screen and (max-width: 1000px) {
     .section1-container {
@@ -264,7 +292,7 @@
         margin-top: 2rem;
     }
 
-    .section2-img{
+    .section2-img {
         display: none;
     }
 
@@ -276,4 +304,34 @@
         margin-left: 0rem;
     }
 
+}
+
+@keyframes bn13bouncy {
+    0% {
+        top: 0em;
+    }
+
+    40% {
+        top: 0em;
+    }
+
+    43% {
+        top: -0.9em;
+    }
+
+    46% {
+        top: 0em;
+    }
+
+    48% {
+        top: -0.4em;
+    }
+
+    50% {
+        top: 0em;
+    }
+
+    100% {
+        top: 0em;
+    }
 }
