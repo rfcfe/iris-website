@@ -12,6 +12,7 @@ function Navbar() {
 
   const toggleMenu = () => {
     setIsToggleIcon(!isToggleIcon);
+    window.scrollTo(0, 0);
   };
   return (
     <nav className="nav">
