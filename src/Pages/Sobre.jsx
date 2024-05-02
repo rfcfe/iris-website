@@ -1,10 +1,19 @@
 import React from "react";
 import "./pages.css";
+import useIntersectionObserver from "../utils/useIntersectionObserver";
+
 
 function Sobre() {
+  const [isVisible, sectionRef] = useIntersectionObserver();
+  const isSmallScreen = window.innerWidth <= 1000;
+
   return (
-    <div className="sobre-layout">
-      <div className="sobre-title-container">
+    <div className="sobre-layout" ref={sectionRef}>
+      <div
+        className={`sobre-title-container  ${
+          isSmallScreen ? "active" : isVisible ? "active" : ""
+        }`}
+      >
         <h1 className="sobre-title">IRIS AMARELO</h1>
       </div>
       <div className="sobre-container1">
