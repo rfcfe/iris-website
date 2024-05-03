@@ -33,7 +33,6 @@
 .sobre-left {
     display: flex;
     justify-content: center;
-
 }
 
 .sobre-right {
@@ -79,12 +78,16 @@
 .sobre-text-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 5%;
+    margin: 5% auto;
+    max-width: 70vw;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 2rem;
 }
 
 .sobre-text-container {
     display: flex;
-    justify-content: flex-start;
-    margin-left: 4rem;
+    width: 95%;
     flex-direction: column;
+    justify-content: center;
 }
