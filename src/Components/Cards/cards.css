@@ -4,13 +4,15 @@
     width: 20rem;
     height: 50vh
 }
-.card{
+
+.card {
     opacity: 0;
     transform: translateX(100%);
     transition: opacity 1s, transform 1.5s;
 }
-.card.active{
-    opacity:1;
+
+.card.active {
+    opacity: 1;
     transform: translateX(0);
 }
 
@@ -82,4 +84,60 @@
         flex: 0 1 calc(100% - 10px);
         margin-right: 0;
     }
+}
+
+/*---------------------------------------------------------*/
+.textCard-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5% auto;
+    max-width: 70vw;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 2rem;
+}
+
+.textCard-grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5% auto;
+    max-width: 70vw;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 2rem;
+}
+
+.textCard-text-container {
+    display: flex;
+    width: 95%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textCard-subtitle {
+    font-size: clamp(1rem, 6vw, 2rem);
+    color: #1a1a1a;
+    font-weight: 1;
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.textCard-text {
+    font-size: 1rem;
+    color: #1a1a1a;
+    font-weight: 50;
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin-bottom: 2rem;
+}
+
+
+.textCard-grid-container2 {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 1s, transofrm 1.5s;
+}
+
+.textCard-grid-container2.active {
+    opacity: 1;
+    transform: translateY(0);
 }

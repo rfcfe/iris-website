@@ -1,10 +1,11 @@
 import React from "react";
-import Section1 from "../Components/Section/Section1";
+import CardCollection from "../Components/Cards/CardCollection";
+import { SECTION3_DATA } from "../utils/data";
 
 function Albuns() {
   return (
     <div>
-      <Section1 />
+      <CardCollection items={SECTION3_DATA} />
     </div>
   );
 }

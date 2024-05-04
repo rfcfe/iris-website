@@ -139,15 +139,15 @@ export const FOOTER_LINKS = [
     links: [
       {
         text: "Construção de raiz",
-        site: "/servicos",
+        site: "/albuns",
       },
       {
         text: "Remodelação",
-        site: "/servicos",
+        site: "/albuns",
       },
       {
         text: "Canalização",
-        site: "/servicos",
+        site: "/albuns",
       },
     ],
   },
@@ -185,6 +185,16 @@ export const SERVICES = [
     icon: "/pincel.svg",
     variant: "orange",
     description: "Pintura...",
+  },
+];
+export const ABOUT_TEXT_CARDS = [
+  {
+    title: "Exemplo 1",
+    text: "Texto Exemplo 1",
+  },
+  {
+    title: "Exemplo 2",
+    text: "Texto Exemplo 2",
   },
 ];
 

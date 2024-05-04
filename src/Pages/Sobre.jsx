@@ -1,7 +1,8 @@
 import React from "react";
 import "./pages.css";
 import useIntersectionObserver from "../utils/useIntersectionObserver";
-
+import TextCard from "../Components/Cards/TextCard";
+import { ABOUT_TEXT_CARDS } from "../utils/data";
 
 function Sobre() {
   const [isVisible, sectionRef] = useIntersectionObserver();
@@ -14,46 +15,41 @@ function Sobre() {
           isSmallScreen ? "active" : isVisible ? "active" : ""
         }`}
       >
-        <h1 className="sobre-title">IRIS AMARELO</h1>
+        <h1
+          className={`sobre-title  ${
+            isSmallScreen ? "active" : isVisible ? "active" : ""
+          }`}
+        >
+          IRIS AMARELO
+        </h1>
       </div>
-      <div className="sobre-container1">
-        <div className="sobre-left">
+      <div
+        className={`sobre-container1  ${
+          isSmallScreen ? "active" : isVisible ? "active" : ""
+        }`}
+      >
+        <div className={`sobre-left`}>
           <img src="../images/obra3.png" className="sobre-img" />
         </div>
-        <div className="sobre-right">
-          <h2 className="sobre-subtitle"> História </h2>
-          <span className="sobre-text">
+        <div className={`sobre-right`}>
+          <h2 className={`sobre-subtitle`}> História </h2>
+          <span className={`sobre-text`}>
             A historia djsiajdosa dsiaohiajiosd dsiahoidhsaoidsha
             odhsaiouhdsaiodhsa ohsdaiosdhoidhasio
           </span>
-          <h3 className="sobre-subtitle2"> Valores </h3>
-          <span className="sobre-text">
+          <h3 className={`sobre-subtitle2`}> Valores </h3>
+          <span className={`sobre-text`}>
             A historia djsiajdosa dsiaohiajiosd dsiahoidhsaoidsha
             odhsaiouhdsaiodhsa ohsdaiosdhoidhasio
           </span>
-          <h3 className="sobre-subtitle2"> Missão </h3>
-          <span className="sobre-text">
-            A historia djsiajdosa dsiaohiajiosd dsiahoidhsaoidsha
-            odhsaiouhdsaiodhsa ohsdaiosdhoidhasio
-          </span>
-        </div>
-      </div>
-      <div className="sobre-text-grid-container">
-        <div className="sobre-text-container">
-          <h3 className="sobre-subtitle2">exemplo</h3>
-          <span className="sobre-text">
-            A historia djsiajdosa dsiaohiajiosd dsiahoidhsaoidsha
-            odhsaiouhdsaiodhsa ohsdaiosdhoidhasio
-          </span>
-        </div>
-        <div className="sobre-text-container">
-          <h3 className="sobre-subtitle2">exemplo</h3>
-          <span className="sobre-text">
+          <h3 className={`sobre-subtitle2`}> Missão </h3>
+          <span className={`sobre-text`}>
             A historia djsiajdosa dsiaohiajiosd dsiahoidhsaoidsha
             odhsaiouhdsaiodhsa ohsdaiosdhoidhasio
           </span>
         </div>
       </div>
+      <TextCard Data={ABOUT_TEXT_CARDS} />
     </div>
   );
 }
