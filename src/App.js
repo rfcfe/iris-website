@@ -7,6 +7,7 @@ import Footer from "./Components/Footer/Footer";
 import Albuns from "./Pages/Albuns";
 import Sobre from "./Pages/Sobre";
 import Contacto from "./Pages/Contacto";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/sobre" element={<Sobre />} />
           <Route exact path="/albuns" element={<Albuns />} />
           <Route exact path="/contacto" element={<Contacto />} />
+          <Route exact path="/privacypolicy" element={<PrivacyPolicy />} />
         </Routes>
         <Footer />
       </Router>
