@@ -1,18 +1,18 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import "./cards.css";
-import useIntersectionObserver from "../../utils/useIntersectionObserver";
 
-const Card = ({ image, text }) => {
-  const [isVisible, sectionRef] = useIntersectionObserver();
+const Card = ({ image, text, link }) => {
   return (
     <>
       {image && text && (
-        <div className={`card ${isVisible ? "active" : ""}`} ref={sectionRef}>
-          <img src={image} alt="Card" className="card-image" />
-          <div className="card-overlay">
-            <p className="chat-description">{text}</p>
+        <a href={link}>
+          <div className={`card`}>
+            <img src={image} alt="Card" className="card-image" />
+            <div className="card-overlay">
+              <p className="chat-description">{text}</p>
+            </div>
           </div>
-        </div>
+        </a>
       )}
     </>
   );

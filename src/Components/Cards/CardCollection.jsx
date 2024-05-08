@@ -9,7 +9,6 @@ function CardCollection({ items }) {
           <div className="collection-container">
             {items.map((item) => (
               <div className="collection-item" key={item.id}>
-                {console.log(item.image)}
                 <Card image={item.image} text={item.text} />
               </div>
             ))}

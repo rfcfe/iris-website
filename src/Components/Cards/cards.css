@@ -5,17 +5,6 @@
     height: 50vh
 }
 
-.card {
-    opacity: 0;
-    transform: translateX(100%);
-    transition: opacity 1s, transform 1.5s;
-}
-
-.card.active {
-    opacity: 1;
-    transform: translateX(0);
-}
-
 .card-image {
     width: 100%;
     height: 50vh;
@@ -77,6 +66,7 @@
     .collection-item {
         flex: 0 1 calc(45% - 10px);
     }
+
 }
 
 @media (max-width: 768px) {
@@ -131,13 +121,15 @@
 }
 
 
-.textCard-grid-container2 {
+.textCard-subtitle,
+.textCard-text {
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateX(100%);
     transition: opacity 1s, transofrm 1.5s;
 }
 
-.textCard-grid-container2.active {
+.textCard-subtitle.active,
+.textCard-text.active {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
 }

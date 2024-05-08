@@ -8,21 +8,24 @@ function TextCard({ Data }) {
   return (
     <div ref={sectionRef}>
       {Data && (
-        <div
-          className={`textCard-grid-container  ${
-            isSmallScreen ? "active" : isVisible ? "active" : ""
-          }`}
-        >
+        <div className={`textCard-grid-container`}>
           {console.log(Data[1].text)}
           {Data.map((item, index) => (
-            <div
-              key={index}
-              className={`textCard-text-container ${
-                isSmallScreen ? "active" : isVisible ? "active" : ""
-              }`}
-            >
-              <h3 className={`textCard-subtitle`}>{item.title}</h3>
-              <span className={`textCard-text`}>{item.text}</span>
+            <div key={index} className={`textCard-text-container`}>
+              <h3
+                className={`textCard-subtitle ${
+                  isSmallScreen ? "active" : isVisible ? "active" : ""
+                }`}
+              >
+                {item.title}
+              </h3>
+              <span
+                className={`textCard-text ${
+                  isSmallScreen ? "active" : isVisible ? "active" : ""
+                }`}
+              >
+                {item.text}
+              </span>
             </div>
           ))}
         </div>
