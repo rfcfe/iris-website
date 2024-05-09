@@ -88,33 +88,33 @@ export const SECTION2_DATA = {
 export const SECTION3_DATA = [
   {
     id: 1,
-    image: "../images/Casa2.jpg",
-    text: "aaaaaaaaaaaaaaaaaaaaaaa",
+    image: "../images/Albuns/A1/A1-1.jpg",
+    text: "Habitação Unifamiliar - Chave na Mão - São Domingos de Rana",
   },
   {
     id: 2,
-    image: "../images/Casa2.jpg",
-    text: "aaaaaaaaaaaaaaaaaaaaaaa",
+    image: "../images/Albuns/A2/A2-1.jpg",
+    text: "Restaurante - Mar na Brasa - Parede",
   },
   {
     id: 3,
-    image: "../images/Casa2.jpg",
-    text: "aaaaaaaaaaaaaaaaaaaaaaa",
+    image: "../images/Albuns/A3/A3-1.jpg",
+    text: "Gelataria - Yoomy's - Oeiras",
   },
   {
     id: 4,
-    image: "../images/Casa2.jpg",
-    text: "aaaaaaaaaaaaaaaaaaaaaaa",
+    image: "../images/Albuns/A4/A4-1.jpg",
+    text: "Café - Chave na Mão - Pronto a Comer - Local",
   },
   {
     id: 5,
-    image: "../images/Casa2.jpg",
-    text: "aaaaaaaaaaaaaaaaaaaaaaa",
+    image: "../images/Albuns/A5/A5-1.jpg",
+    text: "Terraço - Impermeabilização - LOCAL",
   },
   {
     id: 6,
-    image: "../images/Casa2.jpg",
-    text: "aaaaaaaaaaaaaaaaaaaaaaa",
+    image: "../images/Albuns/A6/A6-1.jpg",
+    text: "Piscina - LOCAL",
   },
 ];
 export const FOOTER_LINKS = [
