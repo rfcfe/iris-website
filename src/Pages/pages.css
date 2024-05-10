@@ -122,12 +122,12 @@
     .sobre-text-grid-container {
         grid-template-columns: 1fr;
     }
+
 }
 
 @media (max-width: 1000px) {
     .sobre-layout {
         margin-top: 5rem;
-
     }
 }
 
@@ -160,4 +160,19 @@
 .privacy-policy-text-layout {
     display: flex;
     flex-direction: column;
+}
+
+/*-----------------------------------------------------------*/
+.albuns-cardcollection {
+    margin-top: 2.5rem;
+}
+
+@media (max-width: 1000px) {
+    .albuns-cardcollection {
+        margin-top: 7.5rem;
+    }
+}
+
+.about-text {
+    margin-left: 2rem;
 }
