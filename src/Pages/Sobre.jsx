@@ -49,7 +49,9 @@ function Sobre() {
           </span>
         </div>
       </div>
-      <TextCard Data={ABOUT_TEXT_CARDS} />
+      <div className="about-text">
+        <TextCard Data={ABOUT_TEXT_CARDS} />
+      </div>
     </div>
   );
 }
