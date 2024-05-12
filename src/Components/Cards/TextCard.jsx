@@ -9,7 +9,6 @@ function TextCard({ Data }) {
     <div ref={sectionRef}>
       {Data && (
         <div className={`textCard-grid-container`}>
-          {console.log(Data[1].text)}
           {Data.map((item, index) => (
             <div key={index} className={`textCard-text-container`}>
               <h3

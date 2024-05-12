@@ -8,6 +8,7 @@ import Albuns from "./Pages/Albuns";
 import Sobre from "./Pages/Sobre";
 import Contacto from "./Pages/Contacto";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import AlbunsDisplay from "./Pages/AlbunsDisplay";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/sobre" element={<Sobre />} />
           <Route exact path="/albuns" element={<Albuns />} />
+          <Route exact path="/albuns/:id" element={<AlbunsDisplay />} />
           <Route exact path="/contacto" element={<Contacto />} />
           <Route exact path="/privacypolicy" element={<PrivacyPolicy />} />
         </Routes>
