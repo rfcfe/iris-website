@@ -26,9 +26,9 @@ function Section3() {
         className={`section3-cardcollection ${
           isSmallScreen ? "active" : isVisible ? "active" : ""
         }`}
-      ></div>
+      ><TextCard3 Data={ABOUT_TEXT_CARDS}/></div>
       {/* <CardCollection items={SECTION3_DATA} /> */}
-      <TextCard3 Data={ABOUT_TEXT_CARDS}/>
+      
     </section>
   );
 }
