@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import Card2 from "../../Components/Cards/Card2";
 import { importAllImages } from "../../utils/photoImport";
+import Swiper_two from "../Swiper/Swiper_two";
 
 function PhotoDisplay({ id }) {
   const imagePaths = {
@@ -49,12 +50,32 @@ function PhotoDisplay({ id }) {
   };
 
   const selectedImagePaths = imagePaths[id];
+  const [showSwiper, setShowSwiper] = useState(false);
+  const [photoId, setPhotoId] = useState(null);
+
+  const handleClick = (index) => {
+    setShowSwiper(true);
+    setPhotoId(index);
+  };
+
+  const handleCloseSwiper = () => {
+    setShowSwiper(false);
+  };
 
   return (
     <div className="albuns-cardcollection">
       {selectedImagePaths.map((path, index) => (
-        <Card2 key={index} image={path} />
+        <div key={index} className="a" onClick={() => handleClick(index)}>
+          <Card2 image={path} />
+        </div>
       ))}
+      {showSwiper && (
+        <Swiper_two
+          photos={selectedImagePaths}
+          id={photoId}
+          onClose={handleCloseSwiper}
+        />
+      )}
     </div>
   );
 }
