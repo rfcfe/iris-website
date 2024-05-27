@@ -1,17 +1,9 @@
-import React, { useEffect, useRef } from "react";
-import { register } from "swiper/element/bundle";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Navigation, A11y } from "swiper/modules";
+import React, { useState, useEffect } from "react";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import "./Swiper_two.css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import "swiper/css/effect-fade";
-
-register();
 
 function Swiper_two({ photos, id, onClose }) {
-  const swiperRef = useRef(null);
+  const [currentIndex, setCurrentIndex] = useState(id);
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -20,40 +12,56 @@ function Swiper_two({ photos, id, onClose }) {
     };
   }, []);
 
+  useEffect(() => {
+    setCurrentIndex(id);
+  }, [id]);
+
+  const handlePrev = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+  };
+
+  const handleNext = () => {
+    if (currentIndex < photos.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    }
+  };
+
   const stopPropagation = (e) => {
     e.stopPropagation();
   };
 
   return (
-    <>
-      <div className="page" onClick={onClose}>
-        <div
-          className="swiper-container"
-          ref={swiperRef}
-          onClick={stopPropagation}
-        >
-          <Swiper
-            initialSlide={id}
-            navigation
-            pagination={{ clickable: true }}
-            spaceBetween={30}
-            slidesPerView={1}
-          >
-            {photos.map((photo, index) => (
-              <SwiperSlide key={index}>
-                <div className="img-container">
-                  <img
-                    src={photo}
-                    alt={`Photo ${index}`}
-                    className="swiper-two-img"
-                  />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+    <div className="page" onClick={onClose}>
+      <div className="swiper-container" onClick={stopPropagation}>
+        <div className="swiper-wrapper">
+          <div className="swiper-slide">
+            <div className="img-container">
+              <img
+                src={photos[currentIndex]}
+                alt={`Photo ${currentIndex}`}
+                className="swiper-img"
+              />
+            </div>
+          </div>
         </div>
+        <button
+          className="prev-button"
+          onClick={handlePrev}
+          disabled={currentIndex === 0}
+        >
+          <IoIosArrowBack size={40} />
+        </button>
+        <button
+          className="next-button"
+          onClick={handleNext}
+          disabled={currentIndex === photos.length - 1}
+        >
+          <IoIosArrowForward size={40} />
+        </button>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -1,26 +1,64 @@
 .swiper-container {
     display: flex;
+    overflow: hidden;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 15;
-    max-width: 50vw;
-    max-height: 50vh;
-    margin-top: 88px;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
 }
 
-.swiper-two-img {
-    max-width: 50vw;
+.swiper-wrapper {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
 }
 
 .img-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+}
+
+.swiper-img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    height: 100px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+.prev-button:disabled,
+.next-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.prev-button:hover:not(:disabled),
+.next-button:hover:not(:disabled) {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .page {
@@ -32,4 +70,5 @@
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 14;
+
 }
