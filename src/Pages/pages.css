@@ -176,3 +176,24 @@
 .about-text {
     margin-left: 2rem;
 }
+
+/*---------------------------------------------------------------*/
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-item:first-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.contact-item:last-child {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 25px;
+}
